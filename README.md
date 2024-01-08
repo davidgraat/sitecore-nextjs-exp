@@ -4,6 +4,8 @@
 
 [Documentation (XM Cloud)](https://doc.sitecore.com/xmc/en/developers/xm-cloud/sitecore-javascript-rendering-sdk--jss--for-next-js.html)
 
+This project is set up with the code-first workflow, so you don't even need Sitecore!  Content is provided in yaml files in /data.
+
 # Instructions
 If you haven't already, install Sitecore JSS
 ```
