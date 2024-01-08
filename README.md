@@ -7,25 +7,7 @@
 This project is set up with the code-first workflow, so you don't even need Sitecore!  Content is provided in yaml files in /data.
 
 # Instructions
-If you haven't already, install Sitecore JSS
-```
-npm install -g @sitecore-jss/sitecore-jss-cli
-```
-
-To run locally:
-```
-jss start
-```
-
-To scaffold a new component
-```
-jss scaffold <ComponentName>
-```
-
-# Setup
-Here are some things I did to set this up initially
-
-Install Sitecore JSS CLI
+If you haven't already, install Sitecore JSS CLI
 ```
 npm install -g @sitecore-jss/sitecore-jss-cli    
 ```
@@ -34,6 +16,17 @@ There is a note that `jss create` is no longer supported as of version 20.0.0.  
 
 ```
 npx create-sitecore-jss --templates nextjs,nextjs-styleguide --fetchWith REST --prerender SSG --prePushHook true 
+```
+
+To scaffold a new component
+```
+jss scaffold <ComponentName>
+```
+I created a component called MyFirstComponent using this method.
+
+To run locally:
+```
+jss start
 ```
 
 Test the application:
