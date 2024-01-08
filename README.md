@@ -5,6 +5,11 @@
 [Documentation (XM Cloud)](https://doc.sitecore.com/xmc/en/developers/xm-cloud/sitecore-javascript-rendering-sdk--jss--for-next-js.html)
 
 # Instructions
+If you haven't already, install Sitecore JSS
+```
+npm install -g @sitecore-jss/sitecore-jss-cli
+```
+
 To run locally:
 ```
 jss start
@@ -28,3 +33,9 @@ There is a note that `jss create` is no longer supported as of version 20.0.0.  
 ```
 npx create-sitecore-jss --templates nextjs,nextjs-styleguide --fetchWith REST --prerender SSG --prePushHook true 
 ```
+
+Test the application:
+http://localhost:3000
+
+To differentiate between routes that support SSG and routes that support SSR, I created a middleware plugin in /src/lib/middleware/plugins/ssr-router.ts.  You can test this at http://localhost:3000/styleguide/test-ssr.
+
